@@ -11,6 +11,9 @@ class MP:
         4. You can do anything now. All the functions will be running in back-end. When a function finished, it will show logs to the screen, either execute successfully, or exceptions happened.
         5. Before your program end, get the result of function. e.g.: `return_table=my_mp.ret()` It will return a list for all have been execute, including function name, parameters, and the execute result or exceptions. If some function hasn't been finished, the program will keep waiting here.
         ## TODO: A concern is that the random state in parallel execute function is very strange. It may affect some behaviour of numpy. You'd better set random variables outside, or set random state manually in your function.
+        # TODO: Check multi node can be easily used on the hpc. If not, add flag control to fit run with N nodes together.
+        # TODO: add CSV file log output during running MPG.
+        # TODO: add stdout and stderr logging record.
     """
     @staticmethod
     def time_wapper(func,*args,**kwargs):
